@@ -13,6 +13,10 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSString *str=@"zhangsan";
         NSLog(@"%@",str);
+        
+        NSMutableArray * arr=[NSMutableArray array];
+        [arr addObject:str];
+        NSLog(@"%@",arr);
     }
     return 0;
 }
