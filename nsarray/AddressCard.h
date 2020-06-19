@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AddressCard : NSObject
-@property NSString *name,*email;
--(void) setName:(NSString * _Nonnull)name andSetEmail:(NSString*) email;
+@property (copy,nonatomic)NSString *name,*email;
+-(void) setName:(NSString *)name andSetEmail:(NSString*) email;
 -(void) print;
 @end
 
