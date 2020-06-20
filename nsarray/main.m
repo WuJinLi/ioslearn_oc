@@ -35,9 +35,17 @@ int main(int argc, const char * argv[]) {
         [addressBook addCard:card6];
         
         NSLog(@"addressbook count is %i",[addressBook entries]);
+        NSLog(@"查询name为%s的信息:","lissi");
+        AddressCard *search = [addressBook lookup:@"lissi"];
+        [search print];
         
+    
+        NSLog(@"删除前数据：");
+        [addressBook sort];
         [addressBook list];
-        
+        NSLog(@"删除后数据：");
+        [addressBook removeCard:@"zhangsan"];
+        [addressBook list];
     }
     return 0;
 }

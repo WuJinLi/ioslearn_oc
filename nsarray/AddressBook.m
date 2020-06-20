@@ -39,4 +39,25 @@
         NSLog(@"%31s       %31s",[card.name UTF8String],[card.email UTF8String]);
     }
 }
+- (AddressCard *)lookup:(NSString *)name{
+    for (AddressCard *nextCard in book) {
+        if ([nextCard.name caseInsensitiveCompare:name]==NSOrderedSame) {
+            return nextCard;
+        }
+    }
+    return nil;
+}
+
+- (void)removeCard:(NSString *)removeName{
+    AddressCard* remove=[self lookup:removeName];
+    if (remove!=nil&&book!=nil&&[book count]>0) {
+        [book removeObjectIdenticalTo:remove];
+    }
+}
+
+-(void) sort{
+    [book sortUsingComparator:^(id obj1,id obj2){
+        return [[obj1 name] compare:[obj2 name]];
+    }];
+}
 @end

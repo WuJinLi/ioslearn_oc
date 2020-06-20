@@ -19,4 +19,12 @@
 -(void)print{
     NSLog(@"%31s    %31s",[name UTF8String],[email UTF8String]);
 }
+- (BOOL)isEqual:(AddressCard*)other
+{
+    if ([name isEqual:other.name]==YES && [email isEqual:other.email]==YES) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
 @end
