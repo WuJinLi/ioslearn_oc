@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7045E6F324A09AC00047D146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7045E6F224A09AC00047D146 /* main.m */; };
 		70F231C2249B49BA003C56C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F231C1249B49BA003C56C9 /* main.m */; };
 		70F231CF249B6BD4003C56C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F231CE249B6BD4003C56C9 /* main.m */; };
 		70F231D5249B6C0C003C56C9 /* AddressCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F231D4249B6C0C003C56C9 /* AddressCard.m */; };
@@ -14,6 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7045E6EE24A09AC00047D146 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		70F231BC249B49BA003C56C9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7045E6F024A09AC00047D146 /* nsdictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nsdictionary; sourceTree = BUILT_PRODUCTS_DIR; };
+		7045E6F224A09AC00047D146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70F231BE249B49BA003C56C9 /* ioslearn_oc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ioslearn_oc; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F231C1249B49BA003C56C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70F231CC249B6BD4003C56C9 /* nsarray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nsarray; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7045E6ED24A09AC00047D146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70F231BB249B49BA003C56C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,11 +82,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7045E6F124A09AC00047D146 /* nsdictionary */ = {
+			isa = PBXGroup;
+			children = (
+				7045E6F224A09AC00047D146 /* main.m */,
+			);
+			path = nsdictionary;
+			sourceTree = "<group>";
+		};
 		70F231B5249B49BA003C56C9 = {
 			isa = PBXGroup;
 			children = (
 				70F231C0249B49BA003C56C9 /* ioslearn_oc */,
 				70F231CD249B6BD4003C56C9 /* nsarray */,
+				7045E6F124A09AC00047D146 /* nsdictionary */,
 				70F231BF249B49BA003C56C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +105,7 @@
 			children = (
 				70F231BE249B49BA003C56C9 /* ioslearn_oc */,
 				70F231CC249B6BD4003C56C9 /* nsarray */,
+				7045E6F024A09AC00047D146 /* nsdictionary */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +133,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7045E6EF24A09AC00047D146 /* nsdictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7045E6F624A09AC00047D146 /* Build configuration list for PBXNativeTarget "nsdictionary" */;
+			buildPhases = (
+				7045E6EC24A09AC00047D146 /* Sources */,
+				7045E6ED24A09AC00047D146 /* Frameworks */,
+				7045E6EE24A09AC00047D146 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nsdictionary;
+			productName = nsdictionary;
+			productReference = 7045E6F024A09AC00047D146 /* nsdictionary */;
+			productType = "com.apple.product-type.tool";
+		};
 		70F231BD249B49BA003C56C9 /* ioslearn_oc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70F231C5249B49BA003C56C9 /* Build configuration list for PBXNativeTarget "ioslearn_oc" */;
@@ -147,6 +193,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = WuJInLi;
 				TargetAttributes = {
+					7045E6EF24A09AC00047D146 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					70F231BD249B49BA003C56C9 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -170,11 +219,20 @@
 			targets = (
 				70F231BD249B49BA003C56C9 /* ioslearn_oc */,
 				70F231CB249B6BD4003C56C9 /* nsarray */,
+				7045E6EF24A09AC00047D146 /* nsdictionary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7045E6EC24A09AC00047D146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7045E6F324A09AC00047D146 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70F231BA249B49BA003C56C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +254,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		7045E6F424A09AC00047D146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7045E6F524A09AC00047D146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		70F231C3249B49BA003C56C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +414,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7045E6F624A09AC00047D146 /* Build configuration list for PBXNativeTarget "nsdictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7045E6F424A09AC00047D146 /* Debug */,
+				7045E6F524A09AC00047D146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		70F231B9249B49BA003C56C9 /* Build configuration list for PBXProject "ioslearn_oc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
